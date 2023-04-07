@@ -1,0 +1,95 @@
+:root
+{
+    --darkgrey: #212329;
+    --brightred: #F9423D;
+    --white: #fff;
+    --lightred: #f9433dcc;
+}
+
+* 
+{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    color: red
+}
+
+.nav-container 
+{
+    width: 100%;
+    background-color: darkcyan;
+}
+
+.navbar 
+{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo
+{
+    color: var(#fff);
+    justify-self: start;
+    margin-left: 20px;
+}
+
+#navbar-logo 
+{
+    cursor: pointer;
+}
+
+.nav-menu
+{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    list-style: none;
+    width: 70%;
+    justify-self: end;
+}
+
+.nav-links 
+{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.nav-links:hover 
+{
+    color: var(rgb(248, 121, 121));
+    transition: all 0.2s ease-out;
+}
+
+.menu-toggle .bar 
+{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--white);
+}
+
+@media screen and (max-width: 768px) 
+{
+.nav-container 
+{
+    position: relative;
+
+}
+
+.nav-menu 
+{
+    display: grid;
+    grid-template-columns: auto;
+    background: var;
+}
+}
