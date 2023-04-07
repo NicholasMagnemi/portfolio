@@ -16,13 +16,13 @@
 
 h1
 {
-    color: red
+    color: rgb(224, 224, 224)
 }
 
 .nav-container 
 {
     width: 100%;
-    background-color: darkcyan;
+    background-color: rgb(25, 27, 32);
 }
 
 .navbar 
