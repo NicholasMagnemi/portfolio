@@ -238,6 +238,7 @@ section
     justify-content: center;
     height: 400px;
 }
+
 .box
 {
     background-color: var(--darkBlue);
@@ -246,7 +247,9 @@ section
     border-radius: 5px;
     width: 400px;
     height: 400px;
+    
 }
+
 .box-title
 {
     color: var(--lightGray);
@@ -275,5 +278,10 @@ section
     border-radius: 5px;
     width: 816px;
     height: 400px;
+}
+
+.box-image
+{
+
 }
 
