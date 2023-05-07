@@ -8,4 +8,13 @@
     --lightGray: #b1b1b1;
 }
 
-.
+nav
+{
+    background-color: var(--darkBlue);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5rem;
+}
