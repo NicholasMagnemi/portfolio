@@ -1,0 +1,260 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+section {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+  }
+  
+.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box; /* Add this line */
+  }
+  
+  .nav-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px; /* Add this line */
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 60px;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #555;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    width: 100%;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-menu.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        grid-template-rows: repeat(3, 1fr);
+      }
+    
+      .span-2 {
+        grid-column: span 1; /* Let the item span only one column on small screens */
+      }
+
+      .skill-icon {
+        font-size: 36px;
+      }
+  }
+
+/* About Me section */
+.about-me {
+    margin-top: 60px; /* Offset the fixed navbar height */
+    padding: 40px;
+    background-color: #f5f5f5;
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .span-2 {
+    grid-column: span 2;
+  }
+
+/* Skills section */
+.skills {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+    max-width: 900px; /* Set a maximum width */
+    margin-left: auto; /* Center the section horizontally */
+    margin-right: auto; /* Center the section horizontally */
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .skill-icon {
+    font-size: 48px;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .work-item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .work-item p {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .work-item a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .academic-work {
+    /* Existing styles */
+  }
+  
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .work-item {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text in each work item */
+  }
+  
+  .work-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .work-item p {
+    margin-bottom: 10px;
+  }
+  
+  .work-item a {
+    text-decoration: none;
+    color: #333;
+    background-color: #aaa;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: auto; /* Align the link to the bottom of the work item */
+  }
+  
+  .work-item a:hover {
+    background-color: #999;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .work-grid {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+  }
+  

@@ -5,19 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.ts"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul class = nav-bar>
-                <li class = "nav-item"><a href="#" class="nav-item-link">About Me</a></li>
-                <li class = "nav-item"><a href="#" class="nav-item-link">Skills</a></li>
-                <li class = "nav-item"><a href="#" class="nav-item-link">Experience</a></li>
-                <li class = "nav-item"><a href="#" class="nav-item-link">Academic Work Samples</a></li>
-                <li class = "nav-item"><a href="#" class="nav-item-link">Projects</a></li>
-                <li class = "nav-item"><a href="#" class="nav-item-link">Contact Me</a></li>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Logo</a>
+            <ul class="nav-menu">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Academic Work Samples</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact Me</a></li>
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-    </header>
+  </header>
+  <main>
+    <section class="about-me">
+        <h2 class = "section-title">About Me</h2>
+        <div class="grid-container">
+          <div class="grid-item">Item 1</div>
+          <div class="grid-item">Item 2</div>
+          <div class="grid-item span-2">Item 3</div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2 class = "section-title">Skills</h2>
+        <div class="skills-container">
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          <i class="skill-icon">Test</i>
+          
+        </div>
+      </section>
+    <section class="experience">
+        <h2 class = "section-title">Experience</h2>
+        <!-- Add your experience content here -->
+    </section>
+      
+      <!-- Academic Work Samples section -->
+      <section class="academic-work">
+        <section class="academic-work">
+            <h2 class = "section-title">Academic Work Samples</h2>
+            <div class="work-grid">
+              <div class="work-item">
+                <h3>Title 1</h3>
+                <p>Description of work sample 1</p>
+                <a href="sample1_link">View Sample 1</a>
+              </div>
+              <div class="work-item">
+                <h3>Title 2</h3>
+                <p>Description of work sample 2</p>
+                <a href="sample2_link">View Sample 2</a>
+              </div>
+              <div class="work-item">
+                <h3>Title 3</h3>
+                <p>Description of work sample 3</p>
+                <a href="sample3_link">View Sample 3</a>
+              </div>
+              <!-- Add more work items as needed -->
+            </div>
+          </section>
+      
+      <!-- Contact Me section -->
+      <section class="contact-me">
+        <h2 class = "section-title">Contact Me</h2>
+        <!-- Add your contact me content here -->
+      </section>
+  </main>
 </body>
 </html>
